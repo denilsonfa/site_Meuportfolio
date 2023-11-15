@@ -178,6 +178,13 @@ a:focus-visible {
     display: none;
 }
 
+.responsive{
+    -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+    -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+    -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+    transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+}
+
 
 @media screen and (max-width: $layout-breakpoint-small) {
     .topnav.responsive {
