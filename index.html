@@ -34,9 +34,22 @@
     <meta name="twitter:image" content="./img/og_img.webp">
 
     <!-- Inclusão de JavaScript externo -->
+    <!-- Loading -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer>
+        $(document).ready(function () {
+            // Mostrar loading ao iniciar o carregamento da página
+            $('#loading-overlay').fadeIn();
+
+            // Ocultar loading após 2 segundos
+            setTimeout(function () {
+                $('#loading-overlay').fadeOut();
+            }, 500);
+        });
+    </script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1QYJNT0HV"></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-P1QYJNT0HV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -46,7 +59,8 @@
     </script>
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
+    <script defer>
+        (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
@@ -57,7 +71,7 @@
     <!-- End Google Tag Manager -->
 
     <!-- Hotjar Tracking Code for https://denilsonfa.com -->
-    <script>
+    <script defer>
         (function (h, o, t, j, a, r) {
             h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
             h._hjSettings = { hjid: 3736259, hjsv: 6 };
@@ -68,27 +82,15 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <!-- Loading -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Mostrar loading ao iniciar o carregamento da página
-            $('#loading-overlay').fadeIn();
-
-            // Ocultar loading após 2 segundos
-            setTimeout(function () {
-                $('#loading-overlay').fadeOut();
-            }, 1000);
-        });
-    </script>
-
 </head>
 
 <body class="respons">
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCDTJSF2" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCDTJSF2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Loading -->
@@ -111,8 +113,8 @@
             <a href="#meus_servicos">Meus Serviços</a>
             <a href="#hard_skills">Hard Skills</a>
             <a href="#entre_em_contato">Entre em Contato!</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="Abrir menu"
-                aria-label="Abrir menu">
+            <a href="javascript:void(0);" 
+            rel="nofollow" class="icon" onclick="myFunction()" title="Abrir menu" aria-label="Abrir menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path
                         d="M28 16C28 16.2652 27.8946 16.5196 27.7071 16.7071C27.5196 16.8946 27.2652 17 27 17H5C4.73478 17 4.48043 16.8946 4.29289 16.7071C4.10536 16.5196 4 16.2652 4 16C4 15.7348 4.10536 15.4804 4.29289 15.2929C4.48043 15.1054 4.73478 15 5 15H27C27.2652 15 27.5196 15.1054 27.7071 15.2929C27.8946 15.4804 28 15.7348 28 16ZM5 9H27C27.2652 9 27.5196 8.89464 27.7071 8.70711C27.8946 8.51957 28 8.26522 28 8C28 7.73478 27.8946 7.48043 27.7071 7.29289C27.5196 7.10536 27.2652 7 27 7H5C4.73478 7 4.48043 7.10536 4.29289 7.29289C4.10536 7.48043 4 7.73478 4 8C4 8.26522 4.10536 8.51957 4.29289 8.70711C4.48043 8.89464 4.73478 9 5 9ZM27 23H5C4.73478 23 4.48043 23.1054 4.29289 23.2929C4.10536 23.4804 4 23.7348 4 24C4 24.2652 4.10536 24.5196 4.29289 24.7071C4.48043 24.8946 4.73478 25 5 25H27C27.2652 25 27.5196 24.8946 27.7071 24.7071C27.8946 24.5196 28 24.2652 28 24C28 23.7348 27.8946 23.4804 27.7071 23.2929C27.5196 23.1054 27.2652 23 27 23Z"
@@ -668,7 +670,7 @@
     </footer>
 
     <!-- Inclusão de JavaScript externo -->
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 
 </body>
 
