@@ -20,30 +20,35 @@ $fontWeightAnimation: fontWeightAnimation 1.5s linear infinite;
     font-family: "Arvo";
     src: url('./fonts/Arvo-Regular.ttf') format('truetype');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Arvo";
     src: url('./fonts/Arvo-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Barlow";
     src: url('./fonts/Barlow-Regular.ttf') format('truetype');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Barlow";
     src: url('./fonts/Barlow-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Barlow";
     src: url('./fonts/Barlow-Black.ttf') format('truetype');
     font-weight: 900;
+    font-display: swap;
 }
 
 ::selection {
@@ -54,18 +59,6 @@ $fontWeightAnimation: fontWeightAnimation 1.5s linear infinite;
 ::-moz-selection {
     background: $primaryColor;
     color: $branco01 !important
-}
-
-* {
-    -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
-    /* Safari/Chrome */
-    -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
-    /* Firefox */
-    -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
-    /* Opera */
-    transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
-    /* Navegadores modernos */
-
 }
 
 body {
@@ -97,17 +90,6 @@ a:focus-visible {
         font-weight: 900;
     }
 }
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 .uiux {
     color: $colorUIUX;
@@ -162,6 +144,11 @@ a:focus-visible {
             color: black;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
 
         @media (max-width: $layout-breakpoint-small) {
@@ -304,6 +291,11 @@ a:focus-visible {
                     box-shadow: 0px 0px 20px 0px rgba(212, 212, 212, 0.50);
                     outline-offset: 0;
                     outline: -webkit-focus-ring-color auto 0;
+            
+                    -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
                 }
             }
         }
@@ -326,6 +318,10 @@ a:focus-visible {
 
         }
 
+    }
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        border-radius: 0;
     }
 }
 
@@ -368,6 +364,11 @@ a:focus-visible {
             box-shadow: 0px 0px 20px 0px rgba(67, 200, 140, 0.50);
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
 
             svg * {
                 fill: $preto01;
@@ -619,6 +620,11 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
     }
 
@@ -632,6 +638,11 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
     }
 
@@ -645,6 +656,11 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
     }
 
@@ -658,6 +674,11 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
     }
 
@@ -802,6 +823,11 @@ a:focus-visible {
             background-color: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
+            
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
 
         .text_t {
@@ -988,6 +1014,11 @@ a:focus-visible {
                     box-shadow: 0px 0px 20px 0px rgba(212, 212, 212, 0.50);
                     outline-offset: 0;
                     outline: -webkit-focus-ring-color auto 0;
+            
+                    -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
                 }
             }
         }
