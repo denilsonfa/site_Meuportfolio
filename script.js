@@ -1,30 +1,22 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+  x.classList.toggle("responsive", x.classList.contains("topnav"));
 }
 
+// Mudança de categorias
 function categOpen(evt, categ) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+  // Hide all elements with class="tabcontent"
+  Array.from(document.getElementsByClassName("tabcontent")).forEach(tab => {
+    tab.style.display = "none";
+  });
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+  // Remove the "active" class from all elements with class="tablinks"
+  Array.from(document.getElementsByClassName("tablinks")).forEach(link => {
+    link.classList.remove("active");
+  });
 
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(categ).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.classList.add("active");
 }
