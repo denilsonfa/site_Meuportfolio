@@ -14,42 +14,40 @@ $preto03: #333333;
 $branco: #D4D4D4;
 $branco01: #FFFFFF;
 
-$fontWeightAnimation: fontWeightAnimation 1.5s linear infinite;
+// @font-face {
+//     font-family: "Arvo";
+//     src: url('./fonts/Arvo-Regular.ttf') format('truetype');
+//     font-weight: 400;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: "Arvo";
-    src: url('./fonts/Arvo-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: "Arvo";
+//     src: url('./fonts/Arvo-Bold.ttf') format('truetype');
+//     font-weight: 700;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: "Arvo";
-    src: url('./fonts/Arvo-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: "Barlow";
+//     src: url('./fonts/Barlow-Regular.ttf') format('truetype');
+//     font-weight: 400;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: "Barlow";
-    src: url('./fonts/Barlow-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: "Barlow";
+//     src: url('./fonts/Barlow-Medium.ttf') format('truetype');
+//     font-weight: 500;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: "Barlow";
-    src: url('./fonts/Barlow-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Barlow";
-    src: url('./fonts/Barlow-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: "Barlow";
+//     src: url('./fonts/Barlow-Black.ttf') format('truetype');
+//     font-weight: 900;
+//     font-display: swap;
+// }
 
 ::selection {
     background: $primaryColor;
@@ -78,17 +76,6 @@ a:focus-visible {
     padding: 4px;
     outline-offset: 0;
     outline: -webkit-focus-ring-color auto 0;
-}
-
-@keyframes fontWeightAnimation {
-    0%, 100% {
-        font-weight: 100;
-        letter-spacing: 1.5px;
-    }
-
-    50% {
-        font-weight: 900;
-    }
 }
 
 .uiux {
@@ -454,7 +441,6 @@ a:focus-visible {
             font-family: 'Barlow', sans-serif;
             font-size: 48px;
             font-weight: 900;
-            animation: $fontWeightAnimation;
             line-height: 110%;
             /* 52.8px */
             text-transform: uppercase;
@@ -512,7 +498,6 @@ a:focus-visible {
         font-family: 'Barlow', sans-serif;
         font-size: 48px;
         font-weight: 900;
-        animation: $fontWeightAnimation;
         line-height: 110%;
         /* 52.8px */
         text-transform: uppercase;
