@@ -304,9 +304,10 @@ a:focus-visible {
         gap: 16px;
         flex: 1 0 0;
         align-self: stretch;
+        align-items: center;
 
         img.foto {
-            width: 460px;
+            width: 320px;
             height: 320px;
             object-fit: contain;
 
@@ -921,9 +922,10 @@ a:focus-visible {
         gap: 16px;
         flex: 1 0 0;
         align-self: stretch;
+        align-items: center;
 
         img {
-            width: 100%;
+            width: 320px;
             height: 320px;
             object-fit: contain;
         }
