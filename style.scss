@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 $layout-breakpoint-small: 768px;
 $layout-breakpoint-medium: 1040px;
 $primaryColor: #43C88C;
@@ -13,41 +16,6 @@ $preto03: #333333;
 
 $branco: #D4D4D4;
 $branco01: #FFFFFF;
-
-// @font-face {
-//     font-family: "Arvo";
-//     src: url('./fonts/Arvo-Regular.ttf') format('truetype');
-//     font-weight: 400;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: "Arvo";
-//     src: url('./fonts/Arvo-Bold.ttf') format('truetype');
-//     font-weight: 700;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: "Barlow";
-//     src: url('./fonts/Barlow-Regular.ttf') format('truetype');
-//     font-weight: 400;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: "Barlow";
-//     src: url('./fonts/Barlow-Medium.ttf') format('truetype');
-//     font-weight: 500;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: "Barlow";
-//     src: url('./fonts/Barlow-Black.ttf') format('truetype');
-//     font-weight: 900;
-//     font-display: swap;
-// }
 
 ::selection {
     background: $primaryColor;
@@ -67,6 +35,8 @@ body {
     background-repeat: repeat;
 
     font-family: 'Arvo', serif;
+    font-display: swap;
+
     scroll-behavior: smooth !important;
 }
 
@@ -120,6 +90,7 @@ a:focus-visible {
         text-align: center;
         font-size: 16px;
         font-family: 'Barlow', sans-serif;
+        font-display: swap;
         font-weight: 500;
         line-height: 160%;
         text-transform: uppercase;
@@ -131,7 +102,7 @@ a:focus-visible {
             color: black;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -165,7 +136,7 @@ a:focus-visible {
     display: none;
 }
 
-.responsive{
+.responsive {
     -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
     -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
     -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -240,6 +211,7 @@ a:focus-visible {
 
             color: $branco;
             font-family: 'Barlow', sans-serif;
+            font-display: swap;
             font-size: 48px;
             font-weight: 400;
             line-height: 110%;
@@ -272,6 +244,7 @@ a:focus-visible {
                 color: $preto01;
 
                 font-family: 'Barlow', sans-serif;
+                font-display: swap;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 160%;
@@ -285,7 +258,7 @@ a:focus-visible {
                     box-shadow: 0px 0px 20px 0px rgba(212, 212, 212, 0.50);
                     outline-offset: 0;
                     outline: -webkit-focus-ring-color auto 0;
-            
+
                     -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
                     -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
                     -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -359,7 +332,7 @@ a:focus-visible {
             box-shadow: 0px 0px 20px 0px rgba(67, 200, 140, 0.50);
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -398,6 +371,7 @@ a:focus-visible {
         span {
             text-align: justify;
             font-family: 'Barlow', sans-serif;
+            font-display: swap;
             font-size: 40px;
             font-weight: 900;
             line-height: 110%;
@@ -440,6 +414,7 @@ a:focus-visible {
 
             color: $branco;
             font-family: 'Barlow', sans-serif;
+            font-display: swap;
             font-size: 48px;
             font-weight: 900;
             line-height: 110%;
@@ -497,6 +472,7 @@ a:focus-visible {
         color: $branco;
         text-align: center;
         font-family: 'Barlow', sans-serif;
+        font-display: swap;
         font-size: 48px;
         font-weight: 900;
         line-height: 110%;
@@ -585,6 +561,7 @@ a:focus-visible {
         cursor: pointer;
 
         font-family: 'Arvo', serif;
+        font-display: swap;
 
         padding: 8px 16px;
         align-items: flex-start;
@@ -613,7 +590,7 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -631,7 +608,7 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -649,7 +626,7 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -667,7 +644,7 @@ a:focus-visible {
             background: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -816,7 +793,7 @@ a:focus-visible {
             background-color: $preto03;
             outline-offset: 0;
             outline: -webkit-focus-ring-color auto 0;
-            
+
             -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
             -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
@@ -883,6 +860,7 @@ a:focus-visible {
 
     color: $preto01;
     font-family: "Barlow", sans-serif;
+    font-display: swap;
     font-size: 14px;
     font-weight: 500;
     line-height: 160%;
@@ -995,6 +973,7 @@ a:focus-visible {
 
                 color: $preto01;
                 font-family: 'Barlow', sans-serif;
+                font-display: swap;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 160%;
@@ -1008,7 +987,7 @@ a:focus-visible {
                     box-shadow: 0px 0px 20px 0px rgba(212, 212, 212, 0.50);
                     outline-offset: 0;
                     outline: -webkit-focus-ring-color auto 0;
-            
+
                     -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
                     -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
                     -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
