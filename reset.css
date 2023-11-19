@@ -1,4 +1,7 @@
 @charset "utf-8";
+::-moz-selection{background:#43c88c;color:#222!important}
+::selection{background:#43c88c;color:#222!important}
+::-moz-selection{background:#43c88c;color:#fff!important}
 a,abbr,address,and,applet,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,select,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video{background:0 0;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{line-height:1}

@@ -1,0 +1,660 @@
+@charset "utf-8";
+/* CSS Document */
+
+$layout-breakpoint-small: 768px;
+$layout-breakpoint-medium: 1040px;
+$primaryColor: #43C88C;
+$colorUIUX: $primaryColor;
+$colorART: #43C0C8;
+$colorVIDEO: #C8BB43;
+$colorOTHERS: #e95c5c;
+
+$preto00: #1B1B1B;
+$preto01: #222222;
+$preto02: #444444;
+$preto03: #333333;
+
+$branco: #D4D4D4;
+$branco01: #FFFFFF;
+
+.uiux {
+    color: $colorUIUX;
+}
+
+.arts {
+    color: $colorART;
+}
+
+.video {
+    color: $colorVIDEO;
+}
+
+.others {
+    color: $colorOTHERS;
+}
+
+.responsive {
+    -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+    -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+    -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+    transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+}
+
+
+@media screen and (max-width: $layout-breakpoint-small) {
+    .topnav.responsive {
+        // position: relative;
+        box-shadow: 24px 24px 40px 0px rgba(0, 0, 0, .25);
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+.item_sectionA {
+
+    margin: 96px auto 0;
+
+    border-radius: 24px;
+    background: $preto01;
+    box-shadow: 24px 24px 40px 0px rgba(0, 0, 0, 0.25);
+
+    .esq {
+        padding: 40px 0 40px 40px;
+
+        .text_space {
+            padding-top: 24px;
+            justify-content: flex-end;
+        }
+    }
+
+    .dir {
+        padding: 40px 40px 40px 0px;
+        align-items: center;
+
+        img.foto {
+            object-fit: contain;
+
+        }
+
+    }
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        border-radius: 0;
+    }
+}
+
+
+.item_sectionB {
+
+    margin: 0 auto;
+    padding-top: 96px;
+
+    .esq {
+        padding: 40px 0px 40px 40px;
+
+        span {
+            text-align: justify;
+            font-size: 40px;
+            line-height: 110%;
+            /* 52.8px */
+            text-transform: uppercase;
+
+            color: $preto03;
+            background: linear-gradient(180deg, rgba(51, 51, 51, 0.00) 0%, $preto03 50%, rgba(51, 51, 51, 0.00) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            b {
+                color: $branco !important;
+                background: $branco !important;
+                background-clip: text !important;
+                -webkit-text-fill-color: $branco !important;
+
+                b {
+                    color: $primaryColor !important;
+                    background: $primaryColor !important;
+                    background-clip: text !important;
+                    -webkit-text-fill-color: $primaryColor !important;
+                }
+            }
+        }
+    }
+
+    .dir {
+        padding: 40px 40px 40px 0px;
+    }
+}
+
+.tags_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+
+    a {
+        display: flex;
+        padding: 8px 16px;
+        align-items: center;
+        gap: 8px;
+
+        border-radius: 80px;
+        border: 1px solid $branco;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+
+        color: $branco;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 160%;
+        /* 19.2px */
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $preto01;
+            border: 1px solid $primaryColor;
+            border-radius: 80px;
+            background: $primaryColor;
+            box-shadow: 0px 0px 20px 0px rgba(67, 200, 140, 0.50);
+            outline-offset: 0;
+            outline: -webkit-focus-ring-color auto 0;
+
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+
+            svg * {
+                fill: $preto01;
+            }
+        }
+
+    }
+}
+
+.meusServicos,
+.hardSkills {
+    padding: 40px 0px;
+    flex-direction: column;
+    gap: 40px;
+
+    height: auto !important;
+
+    span {
+        align-self: center;
+    }
+
+    span h3 {
+
+        color: $branco;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        font-display: swap;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 110%;
+        /* 52.8px */
+        text-transform: uppercase;
+
+        b {
+            color: $primaryColor;
+        }
+    }
+}
+
+.hardSkills {
+    padding-top: 96px;
+}
+
+.card_serv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    gap: 24px;
+
+    .tab {
+        display: flex;
+        height: fit-content;
+        padding: 0 0 0 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        width: 100%;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+
+        font-family: 'Arvo', serif;
+        font-display: swap;
+
+        padding: 8px 16px;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        border-left: 4px solid $preto03;
+
+        flex: 1 0 0;
+
+        color: $branco;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+
+    }
+
+    .b_uiux {
+
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &.active {
+            border-left: 4px solid $colorUIUX;
+            background: $preto03;
+            outline-offset: 0;
+            outline: -webkit-focus-ring-color auto 0;
+
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+        }
+    }
+
+    .b_arts {
+
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &.active {
+            border-left: 4px solid $colorART;
+            background: $preto03;
+            outline-offset: 0;
+            outline: -webkit-focus-ring-color auto 0;
+
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+        }
+    }
+
+    .b_video {
+
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &.active {
+            border-left: 4px solid $colorVIDEO;
+            background: $preto03;
+            outline-offset: 0;
+            outline: -webkit-focus-ring-color auto 0;
+
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+        }
+    }
+
+    .b_others {
+
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &.active {
+            border-left: 4px solid $colorOTHERS;
+            background: $preto03;
+            outline-offset: 0;
+            outline: -webkit-focus-ring-color auto 0;
+
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+        }
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+
+        padding: 0 40px 0 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex: 1 0 0;
+
+        text-align-last: center;
+
+        .img_info {
+            width: 460px;
+            height: 220px;
+            margin-bottom: 16px;
+            border-radius: 24px 0;
+
+            object-fit: cover;
+        }
+
+        .txt {
+            display: flex;
+            padding: 16px 8px 24px 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+
+            background: $preto01;
+
+            align-self: stretch;
+            text-align-last: left;
+            color: $branco;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%;
+            /* 19.2px */
+
+
+
+            a {
+                font-weight: 700;
+                text-decoration: underline;
+                text-underline-offset: 6px;
+            }
+
+        }
+
+        .uiux_bor {
+            border-left: 4px solid $colorUIUX;
+
+            a {
+                color: $colorUIUX;
+            }
+
+            b {
+                color: $colorUIUX;
+            }
+        }
+
+        .arts_bor {
+            border-left: 4px solid $colorART;
+
+            a {
+                color: $colorART;
+            }
+
+            b {
+                color: $colorART;
+            }
+        }
+
+        .video_bor {
+            border-left: 4px solid $colorVIDEO;
+
+            a {
+                color: $colorVIDEO;
+            }
+
+            b {
+                color: $colorVIDEO;
+            }
+        }
+
+        .other_bor {
+            border-left: 4px solid $colorOTHERS;
+
+            a {
+                color: $colorOTHERS;
+            }
+
+            b {
+                color: $colorOTHERS;
+            }
+        }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        flex-direction: column;
+        gap: 0;
+
+        .tab,
+        .tabcontent {
+            padding: 40px 40px;
+        }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-small) {
+
+        .tab,
+        .tabcontent {
+            padding: 24px 24px;
+        }
+    }
+
+}
+
+.area_hards {
+    display: flex;
+    padding: 40px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+
+    .tag {
+        display: flex;
+        padding: 16px;
+        align-items: center;
+        gap: 8px;
+
+        border-radius: 80px;
+        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.337);
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            background-color: $preto03;
+            outline-offset: 0;
+            outline: -webkit-focus-ring-color auto 0;
+
+            -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+            transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+        }
+
+    }
+
+    .uiux_tag {
+        border: 1px solid $colorUIUX;
+        color: $colorUIUX;
+    }
+
+    .art_tag {
+        border: 1px solid $colorART;
+        color: $colorART;
+    }
+
+    .video_tag {
+        border: 1px solid $colorVIDEO;
+        color: $colorVIDEO;
+    }
+
+    .other_tag {
+        border: 1px solid $colorOTHERS;
+        color: $colorOTHERS;
+    }
+}
+
+.legend_hards {
+    display: flex;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: stretch;
+    align-self: stretch;
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        flex-direction: column;
+    }
+
+}
+
+.card {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+
+    color: $preto01;
+    font-family: "Barlow", sans-serif;
+    font-display: swap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    /* 22.4px */
+
+
+}
+
+.c_uiux {
+    background: $colorUIUX;
+}
+
+.c_arts {
+    background: $colorART;
+}
+
+.c_video {
+    background: $colorVIDEO;
+}
+
+.c_others {
+    background: $colorOTHERS;
+}
+
+.area_contact {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    .esq {
+        padding: 0px 0px 40px 40px;
+        align-items: center;
+
+        img {
+            width: 320px;
+            height: 320px;
+            object-fit: contain;
+        }
+    }
+
+    .dir {
+        padding: 0px 40px 40px 0px;
+
+        .text_n2 {
+            margin-top: 64px;
+
+            b {
+                color: $primaryColor;
+            }
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 16px;
+            align-self: stretch;
+
+
+            @media screen and (max-width: $layout-breakpoint-small) {
+                flex-direction: column;
+            }
+
+            a {
+                display: flex;
+                padding: 8px 16px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                flex: 1 0 0;
+
+                background-color: $primaryColor;
+
+                color: $preto01;
+                font-family: 'Barlow', sans-serif;
+                font-display: swap;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 160%;
+                /* 25.6px */
+                text-transform: uppercase;
+
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    background-color: $branco;
+                    box-shadow: 0px 0px 20px 0px rgba(212, 212, 212, 0.50);
+                    outline-offset: 0;
+                    outline: -webkit-focus-ring-color auto 0;
+
+                    -webkit-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    -moz-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    -o-transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                    transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        flex-direction: column;
+    }
+
+    .esq,
+    .dir {
+        @media screen and (max-width: $layout-breakpoint-medium) {
+            padding: 40px 40px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+            padding: 24px 24px;
+        }
+    }
+}
