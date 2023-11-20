@@ -19,7 +19,10 @@ a:focus,a:focus-visible{background-color:#333;padding:4px;outline-offset:0;outli
 .section .dir .text_space,.section .esq .text_space{display:flex;padding:40px 0;flex-direction:column;align-items:flex-start;gap:16px;align-self:stretch}
 .section .dir .text_space a,.section .esq .text_space a{display:flex;height:42px;padding:8px 24px;align-items:center;gap:8px;background:#43c88c;color:#222;font-family:Barlow,sans-serif;font-display:swap;font-size:16px;font-weight:500;line-height:160%;text-transform:uppercase}
 .section .dir .text_space a:focus,.section .dir .text_space a:focus-visible,.section .dir .text_space a:hover,.section .esq .text_space a:focus,.section .esq .text_space a:focus-visible,.section .esq .text_space a:hover{background-color:#d4d4d4;box-shadow:0 0 20px 0 rgba(212,212,212,.5);outline-offset:0;outline:-webkit-focus-ring-color auto 0;transition:.5s cubic-bezier(0,.74,1,1.28)}
-@media screen and (max-width:1040px){
+@media screen and (max-width:1023px){
+.section .dir,.section .esq{padding:24px 24px!important}
+}
+@media screen and (max-width:1023px){
 .respons{width:100%;flex-direction:column;gap:0;height:auto}
 .respons .dir,.respons .esq{padding:40px 40px}
 .respons .dir .foto,.respons .esq .foto{align-self:center}
@@ -31,7 +34,7 @@ a:focus,a:focus-visible{background-color:#333;padding:4px;outline-offset:0;outli
 }
 footer{margin-top:40px;display:flex;flex-direction:column;align-items:center;align-self:stretch;background:#1b1b1b}
 footer .area_footer{display:flex;max-width:1024px;padding:24px 40px;justify-content:center;align-items:center;gap:24px}
-@media screen and (max-width:1040px){
+@media screen and (max-width:1023px){
 footer .area_footer{flex-direction:column}
 }
 footer span{color:#d4d4d4;font-size:16px;font-weight:700;line-height:160%}

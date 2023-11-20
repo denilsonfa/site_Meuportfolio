@@ -2,7 +2,7 @@
 /* CSS Document */
 
 $layout-breakpoint-small: 768px;
-$layout-breakpoint-medium: 1040px;
+$layout-breakpoint-medium: 1023px;
 $primaryColor: #43C88C;
 $colorUIUX: $primaryColor;
 $colorART: #43C0C8;
@@ -202,6 +202,11 @@ a:focus-visible {
             }
 
         }
+
+        @media screen and (max-width: $layout-breakpoint-medium) {
+            padding: 24px 24px !important;
+        }
+
     }
 }
 

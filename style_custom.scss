@@ -2,7 +2,7 @@
 /* CSS Document */
 
 $layout-breakpoint-small: 768px;
-$layout-breakpoint-medium: 1040px;
+$layout-breakpoint-medium: 1023px;
 $primaryColor: #43C88C;
 $colorUIUX: $primaryColor;
 $colorART: #43C0C8;
@@ -76,6 +76,14 @@ $branco01: #FFFFFF;
             padding-top: 24px;
             justify-content: flex-end;
         }
+
+        .text_t{
+            font-weight: 400;
+
+            b{
+                font-weight: 700;
+            }
+        }
     }
 
     .dir {
@@ -84,6 +92,10 @@ $branco01: #FFFFFF;
 
         img.foto {
             object-fit: contain;
+
+            @media screen and (max-width: $layout-breakpoint-small) {
+                width: 100%;
+            }
 
         }
 
@@ -364,6 +376,10 @@ $branco01: #FFFFFF;
             border-radius: 24px 0;
 
             object-fit: cover;
+
+            @media screen and (max-width: $layout-breakpoint-medium) {
+                width: 100%;
+            }
         }
 
         .txt {
@@ -495,6 +511,15 @@ $branco01: #FFFFFF;
             transition: 0.5s cubic-bezier(0, 0.74, 1, 1.28);
         }
 
+        .text_n{
+            color: $branco;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+            flex-direction: column;
+            border-radius: 16px;
+        }
+
     }
 
     .uiux_tag {
@@ -516,6 +541,11 @@ $branco01: #FFFFFF;
         border: 1px solid $colorOTHERS;
         color: $colorOTHERS;
     }
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        padding: 24px 24px !important;
+    }
+
 }
 
 .legend_hards {
@@ -526,6 +556,11 @@ $branco01: #FFFFFF;
     align-self: stretch;
 
     @media screen and (max-width: $layout-breakpoint-medium) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-medium) {
+        padding: 24px 24px !important;
         flex-direction: column;
     }
 
@@ -576,10 +611,14 @@ $branco01: #FFFFFF;
         padding: 0px 0px 40px 40px;
         align-items: center;
 
-        img {
+        img.foto {
             width: 320px;
             height: 320px;
             object-fit: contain;
+
+            @media screen and (max-width: $layout-breakpoint-small) {
+                width: 100%;
+            }
         }
     }
 
@@ -650,11 +689,8 @@ $branco01: #FFFFFF;
     .esq,
     .dir {
         @media screen and (max-width: $layout-breakpoint-medium) {
-            padding: 40px 40px;
-        }
-
-        @media screen and (max-width: $layout-breakpoint-small) {
             padding: 24px 24px;
         }
+
     }
 }
